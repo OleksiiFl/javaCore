@@ -10,9 +10,9 @@ public class Main {
             System.out.println(bankAge[i]);
         }
         double summ = 0;
-        for (int i = 0; i < bankAge.length; i++) {
+        for (int i = 0; i < bankAge.length; i++)
             summ += bankAge[i];
-        }
+
         System.out.println(summ / bankAge.length);
     }
 }
