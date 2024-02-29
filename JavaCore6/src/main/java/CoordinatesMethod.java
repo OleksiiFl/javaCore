@@ -7,19 +7,23 @@ public class CoordinatesMethod {
         while(true){
             int command = commandInput();
             if(command == 1) {
-                y++;
+                y += steps();
             } else if(command == 2) {
-                y--;
+                y -= steps();
             } else if(command == 3) {
-                x--;
+                x -= steps();
             } else if(command == 4) {
-                x++;
+                x += steps();
             } else if(command == 5) {
                 positionInfo();
             } else {
                 invCom();
             }
         }
+    }
+    public static int steps() {
+        System.out.println("How many steps you want to move?");
+        return new Scanner(System.in).nextInt();
     }
     public static void greetings() {
         System.out.println("Hello! This is the coordinates system moving program. " +
