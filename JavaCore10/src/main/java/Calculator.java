@@ -1,6 +1,6 @@
 public class Calculator {
-    double a;
-    double b;
+    private double a;
+    private double b;
     public Calculator(double a, double b) {
         this.a = a;
         this.b = b;
@@ -12,6 +12,8 @@ public class Calculator {
             System.out.println(a + " - " + b + " = " + (a - b));
         } else if(result == Operation.MULTIPLY) {
             System.out.println(a + " * " + b + " = " + a * b);
+        } else {
+            System.out.println("Invalid command!");
         }
     }
 }
