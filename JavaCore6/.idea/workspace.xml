@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="81185c4a-85e5-4107-aac8-531acbceb32c" name="Changes" comment="Program to find out even/odd numbers" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2d0gSHYs08eedKBF5CXkfDQoaS9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.CoordinatesMethod.executor": "Run",
+    "Application.EvenNumbers.executor": "Run",
+    "Application.Method.executor": "Run",
+    "Application.TaskMethod.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.EvenNumbers">
+    <configuration name="CoordinatesMethod" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CoordinatesMethod" />
+      <module name="JavaCore6" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EvenNumbers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="EvenNumbers" />
+      <module name="JavaCore6" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Method" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Method" />
+      <module name="JavaCore6" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TaskMethod" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TaskMethod" />
+      <module name="JavaCore6" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.EvenNumbers" />
+        <item itemvalue="Application.TaskMethod" />
+        <item itemvalue="Application.CoordinatesMethod" />
+        <item itemvalue="Application.Method" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="81185c4a-85e5-4107-aac8-531acbceb32c" name="Changes" comment="" />
+      <created>1709150414846</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1709150414846</updated>
+    </task>
+    <task id="LOCAL-00001" summary="First try of methods.">
+      <option name="closed" value="true" />
+      <created>1709153712972</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1709153712972</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Moving by system of coordinates. Methods, while, if-else.">
+      <option name="closed" value="true" />
+      <created>1709196888300</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1709196888300</updated>
+    </task>
+    <task id="LOCAL-00003" summary="xml">
+      <option name="closed" value="true" />
+      <created>1709197252855</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1709197252856</updated>
+    </task>
+    <task id="LOCAL-00004" summary="added quantity of steps">
+      <option name="closed" value="true" />
+      <created>1709197512736</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1709197512736</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Home task with calculator and methods">
+      <option name="closed" value="true" />
+      <created>1709286261644</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1709286261645</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Program to find out even/odd numbers">
+      <option name="closed" value="true" />
+      <created>1709380256661</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1709380256661</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First try of methods." />
+    <MESSAGE value="Moving by system of coordinates. Methods, while, if-else." />
+    <MESSAGE value="xml" />
+    <MESSAGE value="added quantity of steps" />
+    <MESSAGE value="Home task with calculator and methods" />
+    <MESSAGE value="Program to find out even/odd numbers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Program to find out even/odd numbers" />
+  </component>
+</project>
