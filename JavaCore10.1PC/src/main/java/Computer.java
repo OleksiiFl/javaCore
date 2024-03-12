@@ -1,24 +1,26 @@
-import Enum.ProcessorWeight;
-import Enum.RAMWeight;
-import Enum.MemoryDriveWeight;
-import Enum.DisplayWeight;
-import Enum.KeyboardWeight;
+import Display.Display;
+import HardDisc.HardDisc;
+import Keyboard.Keyboard;
+import Processor.Processor;
+import RAM.RandomAccessMemory;
+
 public class Computer {
     public static final String VENDOR = "Acer";
 
     private Processor processor;
     private RandomAccessMemory ram;
-    private MemoryDrive memoryDrive;
+    private HardDisc hardDisc;
     private Display display;
     private Keyboard keyboard;
 
-    public Computer() {
-    }
-
-    public Computer(Processor processor, RandomAccessMemory ram, MemoryDrive memoryDrive, Display display, Keyboard keyboard) {
+    public Computer(Processor processor,
+                    RandomAccessMemory ram,
+                    HardDisc hardDisc,
+                    Display display,
+                    Keyboard keyboard) {
         this.processor = processor;
         this.ram = ram;
-        this.memoryDrive = memoryDrive;
+        this.hardDisc = hardDisc;
         this.display = display;
         this.keyboard = keyboard;
     }
@@ -39,12 +41,12 @@ public class Computer {
         this.ram = ram;
     }
 
-    public MemoryDrive getMemoryDrive() {
-        return memoryDrive;
+    public HardDisc getHardDisc() {
+        return hardDisc;
     }
 
-    public void setMemoryDrive(MemoryDrive memoryDrive) {
-        this.memoryDrive = memoryDrive;
+    public void setHardDisc(HardDisc hardDisc) {
+        this.hardDisc = hardDisc;
     }
 
     public Display getDisplay() {
@@ -63,17 +65,16 @@ public class Computer {
         this.keyboard = keyboard;
     }
 
-    public double computerWeight(double proc, double ram, double hd, double disp, double keyboard) {
-        double sum = proc + ram + hd + disp + keyboard;
-        return sum;
+    public double getSumWeight() {
+        return (processor.getWeight() + ram.getWeight() + hardDisc.getWeight() + display.getWeight() + keyboard.getWeight());
     }
 
-    @java.lang.Override
-    public java.lang.String toString() {
+    @Override
+    public String toString() {
         return "Computer{" +
                 "processor=" + processor +
                 ", \nram=" + ram +
-                ", \nmemoryDrive=" + memoryDrive +
+                ", \nhardDisc=" + hardDisc +
                 ", \ndisplay=" + display +
                 ", \nkeyboard=" + keyboard +
                 '}';

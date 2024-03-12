@@ -1,23 +1,14 @@
-import Enum.DisplayType;
-import Enum.DisplayDiagonal;
-import Enum.DisplayWeight;
+package Display;
+
 public class Display {
-    private String type;
     private int diagonal;
+    private DisplayType type;
     private double weight;
 
-    public Display(String type, int diagonal, double weight) {
-        this.type = type;
+    public Display(int diagonal, DisplayType type, double weight) {
         this.diagonal = diagonal;
-        this.weight = weight;
-    }
-
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
         this.type = type;
+        this.weight = weight;
     }
 
     public int getDiagonal() {
@@ -28,6 +19,14 @@ public class Display {
         this.diagonal = diagonal;
     }
 
+    public DisplayType getType() {
+        return type;
+    }
+
+    public void setType(DisplayType type) {
+        this.type = type;
+    }
+
     public double getWeight() {
         return weight;
     }
@@ -36,11 +35,11 @@ public class Display {
         this.weight = weight;
     }
 
-    @java.lang.Override
-    public java.lang.String toString() {
+    @Override
+    public String toString() {
         return "Display{" +
-                "type=" + type +
-                ", diagonal=" + diagonal +
+                "diagonal=" + diagonal +
+                ", type=" + type +
                 ", weight=" + weight +
                 '}';
     }

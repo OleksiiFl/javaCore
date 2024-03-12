@@ -1,30 +1,29 @@
-import Enum.KeyboardType;
-import Enum.KeyboardLighting;
-import Enum.KeyboardWeight;
+package Keyboard;
+
 public class Keyboard {
-    private String type;
-    private String lighting;
+    private KeyboardType type;
+    private Lighting lighting;
     private double weight;
 
-    public Keyboard(String type, String lighting, double weight) {
+    public Keyboard(KeyboardType type, Lighting lighting, double weight) {
         this.type = type;
         this.lighting = lighting;
         this.weight = weight;
     }
 
-    public String getType() {
+    public KeyboardType getType() {
         return type;
     }
 
-    public void setType(String type) {
+    public void setType(KeyboardType type) {
         this.type = type;
     }
 
-    public String getLighting() {
+    public Lighting getLighting() {
         return lighting;
     }
 
-    public void setLighting(String lighting) {
+    public void setLighting(Lighting lighting) {
         this.lighting = lighting;
     }
 
@@ -36,8 +35,8 @@ public class Keyboard {
         this.weight = weight;
     }
 
-    @java.lang.Override
-    public java.lang.String toString() {
+    @Override
+    public String toString() {
         return "Keyboard{" +
                 "type=" + type +
                 ", lighting=" + lighting +
