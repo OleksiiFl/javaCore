@@ -1,11 +1,11 @@
 package Package1;
 
 public class Person {
-    protected String name;
-    protected String occupation;
-    protected String job;
-    protected int age;
-    protected int salary;
+    private String name;
+    private String occupation;
+    private String job;
+    private int age;
+    private int salary;
 
     public Person() {
     }
@@ -46,5 +46,6 @@ public class Person {
     public int getSalary() {
         return salary;
     }
+
 
 }

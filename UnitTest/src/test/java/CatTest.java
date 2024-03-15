@@ -1,16 +1,35 @@
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class CatTest {
+
+    Cat cat;
+    @BeforeEach
+    void addCat() {
+        cat = new Cat("Ursa", "female", "grey", 9);
+    }
     @Test
-    void catNameTest(){
-        Cat cat = new Cat("Ursa", 9);
+    void catGetNameTest(){
         assertEquals("Ursa", cat.getName());
     }
     @Test
-    void catAgeTest(){
-        Cat cat = new Cat("Ursa", 9);
+    void catSetNameTest() {
+        cat.setName("Bars");
+        assertEquals("Bars", cat.getName());
+    }
+    @Test
+    void catGetAgeTest(){
         assertEquals(9, cat.getAge());
+    }
+    @Test
+    void catSetAgeTest() {
+        cat.setAge(10);
+        assertEquals(10, cat.getAge());
+    }
+    @Test
+    void catGetColorTest() {
+        assertEquals("grey", cat.getColor());
     }
 }

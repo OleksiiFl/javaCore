@@ -8,7 +8,7 @@ public class Main {
         person2.setName("John");
         person2.setAge(22);
 
-        System.out.println(person1.name + " - " + person1.occupation + person2.name + " - " + person2.age);
+        System.out.println(person1.getName() + " - " + person1.getOccupation());
         System.out.println(person2.getName());
 
         Person person3 = new Person();
