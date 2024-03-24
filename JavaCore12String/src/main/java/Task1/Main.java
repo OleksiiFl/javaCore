@@ -1,4 +1,5 @@
 package Task1;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -8,6 +9,7 @@ public class Main {
             System.out.println(list[i] + " - " + (int)list[i]);
         }*/
         String alphabet = "abcdefghijklmnopqrstuvwxyz";
+        char e = 'E';
         for(int i = 0; i < alphabet.length(); i++) {
             System.out.println(alphabet.substring(i, i+1) + " - " + (int)alphabet.charAt(i));
         }

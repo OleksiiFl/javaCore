@@ -1,7 +1,11 @@
+import java.util.Scanner;
 public class Kata3 {
     public static void main(String[] args) {
-        int[] array = {-44,2,77,934};
-        System.out.println(min(array) + "," + max(array));
+        int r = new Scanner(System.in).nextInt();
+        int f = 0 - r;
+        System.out.println(f);
+//        int[] array = {-44,2,77,934};
+//        System.out.println(min(array) + "," + max(array));
     }
     public static int min(int[] list) {
         int a = Integer.MAX_VALUE;
