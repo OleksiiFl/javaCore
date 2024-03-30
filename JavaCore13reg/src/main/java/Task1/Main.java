@@ -1,17 +1,14 @@
 package Task1;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(result("Adventure travel\n" +
-                "Are you a bit bored with your nine-to-five routine? Have a look at our exciting range of holidays and decide what type of adventure you’d like.\n" +
-                "Our activity holidays are for everyone, people who love danger or who just like sports. We have a huge variety of water, snow or desert holidays. We’ll take you SCUBA diving in the Red Sea or kayaking and white water rafting in Canada. If you prefer snow, you can try skiing or snowboarding in the Alps or even igloo-building. For those who like warmer weather, we also have sandboarding (the desert version of skateboarding) or camel safaris.\n" +
-                "Take a cruise to Antarctica or the northern Arctic; explore a land of white natural beauty and wonderful wildlife. Our experts will explain everything about the two poles as you watch the penguins in Antarctica or whales and polar bears in the Arctic. There's no greater adventure than travelling to the ends of the earth. A once-in-a-lifetime experience!\n" +
-                "Our cultural journeys will help you discover ancient civilisations: India, Thailand, Egypt and many more. Visit temples, palaces and ancient ruins – just remember to bring your camera! Get to know local ways of life by exploring markets, trying exotic foods and meeting local people.\n" +
-                "We have trekking holidays to famous places such as Machu Picchu or the Everest Base Camp Trek, as well as some nearer to home in the Highlands of Scotland. You don’t need to be very sporty, just fairly fit. You’ll have a great time enjoying nature with a group of new friends. Some of the holidays include camping, but we’ll transport the tents for you!\n" +
-                "We organise small-group tours to get closer to nature in Africa, Asia or South America. Go on safari in Africa and watch lions and giraffes. Meet the famous turtles of the Galapagos Islands. Look for tigers in India, or take an elephant safari in Sri Lanka. We use local guides and stay in a range of accommodation, from tents to tree houses."));
-
+        String input = new Scanner(System.in).nextLine();
+        System.out.println(result(input));
+        //
     }
     public static String result(String input) {
-        return input.replaceAll(" ", "\n").replaceAll("[)(–.,;:!?-]", "");
+        input = input.replaceAll("\\s+", "\n");
+        return input.replaceAll("[/=')(–.,;:!?-]", "");
     }
 }

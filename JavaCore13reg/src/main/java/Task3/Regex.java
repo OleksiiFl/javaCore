@@ -3,18 +3,16 @@ package Task3;
 import java.util.Scanner;
 
 public class Regex {
-    public static final String VALID_NUMBER_FOR_UKRAINE = "(\\d+){12}";
+    public static final String FULL_VALID_PHONE_NUMBER_UA = "(\\d+){12}";
+    public static final String SHORT_VALID_PHONE_NUMBER_UA = "(\\d+){10}";
     public static void main(String[] args) {
         System.out.println("Enter your phone number (Ukraine):");
         String inputNumber = new Scanner(System.in).nextLine();
-        if(inputNumber.replaceAll("\\D", "").matches(VALID_NUMBER_FOR_UKRAINE)) {
-            System.out.println("Press 1 - to print a simple phone number, press any other - to print a number with \"make-up\"");
-            int a = new Scanner(System.in).nextInt();
-            if(a == 1) {
-                System.out.println(numberWithoutChars(inputNumber));
-            } else {
-                System.out.println(numberWithChars(inputNumber));
-            }
+        if(inputNumber.replaceAll("\\D", "").matches(FULL_VALID_PHONE_NUMBER_UA)) {
+            System.out.println(numberWithChars(inputNumber));
+        } else if(inputNumber.replaceAll("\\D", "").matches(SHORT_VALID_PHONE_NUMBER_UA)) {
+            inputNumber = "38" + inputNumber;
+            System.out.println(numberWithChars(inputNumber));
         } else {
             System.out.println("Invalid number.");
         }
