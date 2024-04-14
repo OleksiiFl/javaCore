@@ -1,4 +1,4 @@
-public class Animal {
+public abstract class Animal {
     private String name;
     private Integer age;
     private Double weight;
@@ -35,9 +35,5 @@ public class Animal {
     public void setWeight(double weugth) {
         this.weight = weugth;
     }
-    public void walk() {
-        System.out.println("The animal walks.");
-    }
-    public void move() {
-    }
+    public abstract void move();
 }
