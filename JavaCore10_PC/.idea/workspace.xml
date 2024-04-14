@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0388cdff-ace6-4248-877b-9180872c1286" name="Changes" comment="Checked out and simplified a code after watching mentors movie">
-      <change beforePath="$PROJECT_DIR$/../JavaCore10.1PC/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaCore10.1PC/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaCore10.1PC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaCore10.1PC/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="0388cdff-ace6-4248-877b-9180872c1286" name="Changes" comment="Checked out and simplified a code after watching mentors movie" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,9 +51,9 @@
     "Application.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "branch__1",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Git_Java/javaCore/JavaCore10_PC",
+    "last_opened_file_path": "C:/Git_Java/javaCore/JavaCore10",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",

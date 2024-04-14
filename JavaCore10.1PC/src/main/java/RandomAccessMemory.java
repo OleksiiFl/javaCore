@@ -1,30 +1,32 @@
 import Enum.RAMType;
 import Enum.RAMCapacity;
-import Enum.RAMWeight;
 public class RandomAccessMemory {
-    private String ramType;
-    private String ramCapacity;
+    private RAMType ramType;
+    private RAMCapacity ramCapacity;
     private double ramWeight;
 
-    public RandomAccessMemory(String ramType, String ramCapacity, double ramWeight) {
+    public RandomAccessMemory() {
+    }
+
+    public RandomAccessMemory(RAMType ramType, RAMCapacity ramCapacity, double ramWeight) {
         this.ramType = ramType;
         this.ramCapacity = ramCapacity;
         this.ramWeight = ramWeight;
     }
 
-    public String getRamType() {
+    public RAMType getRamType() {
         return ramType;
     }
 
-    public void setRamType(String ramType) {
+    public void setRamType(RAMType ramType) {
         this.ramType = ramType;
     }
 
-    public String getRamCapacity() {
+    public RAMCapacity getRamCapacity() {
         return ramCapacity;
     }
 
-    public void setRamCapacity(String ramCapacity) {
+    public void setRamCapacity(RAMCapacity ramCapacity) {
         this.ramCapacity = ramCapacity;
     }
 

@@ -1,37 +1,39 @@
 import Enum.MemoryDriveType;
-import Enum.MemoryDriveCapacity;
-import Enum.MemoryDriveWeight;
 public class MemoryDrive {
-    private String type;
+    private MemoryDriveType type;
     private int capacity;
     private double weight;
-    public MemoryDrive(String type, int capacity, double weight) {
+
+    public MemoryDrive() {
+    }
+
+    public MemoryDrive(MemoryDriveType type, int capacity, double weight) {
         this.type = type;
         this.capacity = capacity;
         this.weight = weight;
     }
 
-    public String getMDType() {
+    public MemoryDriveType getType() {
         return type;
     }
 
-    public void setMDType(String type) {
+    public void setType(MemoryDriveType type) {
         this.type = type;
     }
 
-    public int getMDCapacity() {
+    public int getCapacity() {
         return capacity;
     }
 
-    public void setMDCapacity(int capacity) {
+    public void setCapacity(int capacity) {
         this.capacity = capacity;
     }
 
-    public double getMDWeight() {
+    public double getWeight() {
         return weight;
     }
 
-    public void setMDWeight(double weight) {
+    public void setWeight(double weight) {
         this.weight = weight;
     }
 

@@ -1,8 +1,3 @@
-import Enum.ProcessorWeight;
-import Enum.RAMWeight;
-import Enum.MemoryDriveWeight;
-import Enum.DisplayWeight;
-import Enum.KeyboardWeight;
 public class Computer {
     public static final String VENDOR = "Acer";
 
@@ -63,9 +58,8 @@ public class Computer {
         this.keyboard = keyboard;
     }
 
-    public double computerWeight(double proc, double ram, double hd, double disp, double keyboard) {
-        double sum = proc + ram + hd + disp + keyboard;
-        return sum;
+    public double computerWeight() {
+        return processor.getWeight() + ram.getRamWeight() + memoryDrive.getWeight() + display.getWeight() + keyboard.getWeight();
     }
 
     @java.lang.Override

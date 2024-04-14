@@ -1,22 +1,23 @@
 import Enum.DisplayType;
-import Enum.DisplayDiagonal;
-import Enum.DisplayWeight;
 public class Display {
-    private String type;
+    private DisplayType type;
     private int diagonal;
     private double weight;
 
-    public Display(String type, int diagonal, double weight) {
+    public Display() {
+    }
+
+    public Display(DisplayType type, int diagonal, double weight) {
         this.type = type;
         this.diagonal = diagonal;
         this.weight = weight;
     }
 
-    public String getType() {
+    public DisplayType getType() {
         return type;
     }
 
-    public void setType(String type) {
+    public void setType(DisplayType type) {
         this.type = type;
     }
 

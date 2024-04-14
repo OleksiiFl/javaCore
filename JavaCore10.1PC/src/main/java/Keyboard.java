@@ -1,30 +1,32 @@
 import Enum.KeyboardType;
 import Enum.KeyboardLighting;
-import Enum.KeyboardWeight;
 public class Keyboard {
-    private String type;
-    private String lighting;
+    private KeyboardType type;
+    private KeyboardLighting lighting;
     private double weight;
 
-    public Keyboard(String type, String lighting, double weight) {
+    public Keyboard() {
+    }
+
+    public Keyboard(KeyboardType type, KeyboardLighting lighting, double weight) {
         this.type = type;
         this.lighting = lighting;
         this.weight = weight;
     }
 
-    public String getType() {
+    public KeyboardType getType() {
         return type;
     }
 
-    public void setType(String type) {
+    public void setType(KeyboardType type) {
         this.type = type;
     }
 
-    public String getLighting() {
+    public KeyboardLighting getLighting() {
         return lighting;
     }
 
-    public void setLighting(String lighting) {
+    public void setLighting(KeyboardLighting lighting) {
         this.lighting = lighting;
     }
 
