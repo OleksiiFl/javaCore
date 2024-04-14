@@ -1,9 +1,9 @@
 public class Main {
     public static void main(String[] args) {
         Dog dog = new Dog("Rex", 7, 18.2);
-        Duck duckElder = new Duck("Donald", 10, 6);
-        Duck duckJunior = new Duck("Bait", 1, 1);
-        Fish pike = new Fish("Pike", 8, 6);
+        Duck duckElder = new Duck("Donald", 10, 6.0);
+        Duck duckJunior = new Duck("Bait", 1, 1.0);
+        Fish pike = new Fish("Pike", 8, 6.0);
         Fish roach = new Fish("Roach", 2, 0.4);
 
         huntingDuck(duckElder.getWeight(), roach.getWeight(), duckElder, roach);

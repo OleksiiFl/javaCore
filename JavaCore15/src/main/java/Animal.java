@@ -1,7 +1,7 @@
 public class Animal {
     private String name;
-    private int age;
-    private double weight;
+    private Integer age;
+    private Double weight;
 
     public Animal() {
     }
