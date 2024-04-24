@@ -1,12 +1,9 @@
-public class Kata13 {
-    public static void main(String[] args) {
-        //Given a string of words, you need to find the highest scoring word.
-        // Each letter of a word scores points according to its position in the alphabet:
-        // a = 1, b = 2, c = 3 etc.
-        System.out.println(high("wwvwrv dsvsdv gwabr"));
-    }
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+public class Kata13Test {
     public static String high(String s) {
-        if(s.length() == 0) {
+        if(s.length() == 1) {
             return s;
         }
         String abc = "1abcdefghijklmnopqrstuvwxyz";
@@ -33,5 +30,20 @@ public class Kata13 {
             }
         }
         return word[index];
+    }
+    @Test
+    public void sampleTests() {
+        assertEquals("taxi", Kata13.high("man i need a taxi up to ubud"));
+        assertEquals("volcano", Kata13.high("what time are we climbing up to the volcano"));
+        assertEquals("semynak", Kata13.high("take me to semynak"));
+    }
+
+    @Test
+    public void edgeCaseTests() {
+        assertEquals("aa", Kata13.high("aa b"));
+        assertEquals("b", Kata13.high("b aa"));
+        assertEquals("bb", Kata13.high("bb d"));
+        assertEquals("d", Kata13.high("d bb"));
+        assertEquals("aaa", Kata13.high("aaa b"));
     }
 }
