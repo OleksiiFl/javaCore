@@ -1,7 +1,5 @@
 public class Kata10 {
     public static void main(String[] args) {
-        String a = "afafa";
-        //System.out.println(a.charAt(1).toUpperCase());
         System.out.println(toJadenCase("How can mirrors be real if our eyes aren't real"));
     }
     public static String toJadenCase(String phrase) {
