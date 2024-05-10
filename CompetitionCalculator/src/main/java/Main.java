@@ -1,18 +1,12 @@
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.*;
 
 public class Main {
     public static Map<String, Integer> competitorsList = new LinkedHashMap<>();
     public static int juryNumber = 0;
     public static void main(String[] args) {
-        competitorsList.put("Софія Пірожик", 0);
-        competitorsList.put("Анастасія Гаврилюк", 0);
-        competitorsList.put("Марина Зажигай", 0);
-        competitorsList.put("Софія Мартова", 0);
-        competitorsList.put("Еміль Кривовязюк", 0);
-        competitorsList.put("Христина Скуратовець", 0);
-        competitorsList.put("Софія Зейдліц", 0);
-        competitorsList.put("Валерія Романченко", 0);
-
+        setCompetitorsList();
         System.out.println("Вітаємо в програмі підрахунку результатів оцінювання конкурсу! Введіть кількість членів жюрі:");
         juryNumber = new Scanner(System.in).nextInt();
         while(true){
@@ -34,6 +28,17 @@ public class Main {
         printResult();
         resultInTreeMap();
         //sortedArray();
+    }
+
+    public static void setCompetitorsList() {
+        competitorsList.put("Софія Пірожик", 0);
+        competitorsList.put("Анастасія Гаврилюк", 0);
+        competitorsList.put("Марина Зажигай", 0);
+        competitorsList.put("Софія Мартова", 0);
+        competitorsList.put("Еміль Кривовязюк", 0);
+        competitorsList.put("Христина Скуратовець", 0);
+        competitorsList.put("Софія Зейдліц", 0);
+        competitorsList.put("Валерія Романченко", 0);
     }
     public static void putValueToMap(String key,  int score) {
         competitorsList.put(key, competitorsList.get(key) + score);
